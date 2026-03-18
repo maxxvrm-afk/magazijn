@@ -1,22 +1,18 @@
 import Link from "next/link";
-import { ReactNode } from "react";
 
 const links = [
   ["/dashboard", "Dashboard"],
+  ["/voorraad", "Voorraad"],
   ["/binnenkomst", "Binnenkomst"],
   ["/uitgifte", "Uitgifte"],
-  ["/voorraad", "Voorraad"],
   ["/karren", "Karren"],
-];
+] as const;
 
-export function AppShell({ title, children }: { title: string; children: ReactNode }) {
+export function AppShell({ children }: { children: React.ReactNode }) {
   return (
-    <main className="container">
-      <div className="header">
-        <div>
-          <h1 style={{ margin: 0 }}>{title}</h1>
-          <p className="muted">Pc voor labels en PDF. Telefoon voor binnenkomst. Bluetooth scanner werkt als toetsenbord.</p>
-        </div>
+    <div className="app-shell">
+      <aside className="sidebar">
+        <h1>Magazijn App</h1>
         <nav className="nav">
           {links.map(([href, label]) => (
             <Link key={href} href={href}>
@@ -24,8 +20,9 @@ export function AppShell({ title, children }: { title: string; children: ReactNo
             </Link>
           ))}
         </nav>
-      </div>
-      {children}
-    </main>
+      </aside>
+
+      <main className="content">{children}</main>
+    </div>
   );
 }
