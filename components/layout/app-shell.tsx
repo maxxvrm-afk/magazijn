@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 
 const links = [
   ["/dashboard", "Dashboard"],
@@ -8,7 +9,12 @@ const links = [
   ["/karren", "Karren"],
 ] as const;
 
-export function AppShell({ children }: { children: React.ReactNode }) {
+type AppShellProps = {
+  children: ReactNode;
+  title?: string;
+};
+
+export function AppShell({ children, title }: AppShellProps) {
   return (
     <div className="app-shell">
       <aside className="sidebar">
@@ -22,7 +28,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </nav>
       </aside>
 
-      <main className="content">{children}</main>
+      <main className="content">
+        {title ? <h2>{title}</h2> : null}
+        {children}
+      </main>
     </div>
   );
 }
