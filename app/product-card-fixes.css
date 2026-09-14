@@ -3,6 +3,15 @@
   filter:brightness(0) saturate(100%);
 }
 
+/* LC001-01 uses a transparent PNG: keep the product canvas light instead of black. */
+.productPageArt[style*="#090909"]{
+  background:#ebe4d6!important;
+}
+.productPageArt[style*="#090909"] img{
+  padding:20px!important;
+  object-fit:contain!important;
+}
+
 .productCard{
   overflow:hidden;
   min-width:0;
