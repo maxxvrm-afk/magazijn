@@ -42,7 +42,8 @@ html,body,main{max-width:100%;overflow-x:hidden}
   .heroArt .heroMoon,.heroArt>img{display:none!important}
   .heroArt:before{z-index:1;background:linear-gradient(to top,rgba(0,0,0,.24) 0%,transparent 35%)!important;background-size:auto!important;mask-image:none!important}
   .heroArt:after{right:14px;top:16px;color:rgba(255,255,255,.72)}
-  .heroArt .heroLabel{bottom:14px;left:14px;color:#fff;background:rgba(10,10,10,.72);border-color:rgba(255,255,255,.22);backdrop-filter:blur(5px)}
+  .heroArt .heroLabel{bottom:14px;left:14px;color:#fff;background:rgba(10,10,10,.72);border-color:rgba(255,255,255,.22);backdrop-filter:blur(5px);font-size:0}
+  .heroArt .heroLabel:after{content:"LC001-01 / SCORPION";font-size:10px;letter-spacing:.17em}
 
   .heroCopy{order:2;margin:0;padding:30px 20px 36px!important;min-height:auto;background:linear-gradient(180deg,#f6f1e7 0%,var(--paper) 100%);border:0;border-top:1px solid var(--line);box-shadow:none;backdrop-filter:none;width:100%}
   .heroCopy:after{right:8px;top:18px;font-size:112px;color:rgba(158,32,32,.055)}
