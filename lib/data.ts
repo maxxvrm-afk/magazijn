@@ -9,7 +9,7 @@ export type Product = {
 };
 
 export const lc001: Product[] = [
-  { slug: 'scorpion', code: 'LC001-01', name: 'Scorpion', character: 'Scorpion', image: 'https://cdn.shopify.com/s/files/1/1009/1325/0631/files/lc001-scorpion.webp?v=1789377750', garment: 'Heavyweight tee', status: 'coming-soon' },
+  { slug: 'scorpion', code: 'LC001-01', name: 'Scorpion', character: 'Scorpion', image: 'https://cdn.shopify.com/s/files/1/1009/1325/0631/files/unisex-heavyweight-garment-dye-tee-washed-black-back-6aa7e1c8aad55.jpg?v=1789387222', garment: 'Heavyweight tee', status: 'coming-soon' },
   { slug: 'panther', code: 'LC001-02', name: 'Panther', character: 'Panther', image: 'https://cdn.shopify.com/s/files/1/1009/1325/0631/files/lc001-panther.webp?v=1789377764', garment: 'Heavyweight tee', status: 'coming-soon' },
   { slug: 'hyena', code: 'LC001-03', name: 'Hyena', character: 'Hyena', image: 'https://cdn.shopify.com/s/files/1/1009/1325/0631/files/lc001-hyena.webp?v=1789377777', garment: 'Heavyweight tee', status: 'coming-soon' },
   { slug: 'smoking-frog', code: 'LC001-04', name: 'Smoking Frog', character: 'Frog', image: 'https://cdn.shopify.com/s/files/1/1009/1325/0631/files/lc001-frog.webp?v=1789377790', garment: 'Heavyweight tee', status: 'coming-soon' },
