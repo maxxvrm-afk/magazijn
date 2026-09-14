@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import './globals.css';
+import './home-upgrade.css';
 
 export const metadata: Metadata = { title: 'Luna Cruenta — L.C.', description: 'Numbered clothing drops beneath the blood moon.' };
 
