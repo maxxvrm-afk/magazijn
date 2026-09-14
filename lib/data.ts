@@ -21,11 +21,17 @@ export const lc001: Product[] = [
   { slug: 'skeleton', code: 'LC001-10', name: 'Skeleton', character: 'Skeleton', image: 'https://cdn.shopify.com/s/files/1/1009/1325/0631/files/lc001-skeleton.webp?v=1789377878', garment: 'Heavyweight tee', status: 'coming-soon' }
 ];
 
-export const bonebound = [
-  ['LC002-01', 'Half-Bone Panther'], ['LC002-02', 'Half-Bone Tiger'], ['LC002-03', 'Half-Bone Hyena'],
-  ['LC002-04', 'Half-Bone Raven'], ['LC002-05', 'Half-Bone Dove'], ['LC002-06', 'Half-Bone Serpent'],
-  ['LC002-07', 'Half-Bone Koi'], ['LC002-08', 'Half-Bone Shark'], ['LC002-09', 'Half-Bone Heron'],
-  ['LC002-10', 'Half-Bone Scorpion']
+export const fiftyFifty = [
+  ['LC002-01', 'CIRCUIT'],
+  ['LC002-02', 'DARKSIDE'],
+  ['LC002-03', 'PANTHERA'],
+  ['LC002-04', 'CROC'],
+  ['LC002-05', 'BEAST'],
+  ['LC002-06', 'JAWS'],
+  ['LC002-07', 'CORVUS'],
+  ['LC002-08', 'KOALA'],
+  ['LC002-09', 'PRIMAL'],
+  ['LC002-10', 'HOLLOW EARTH']
 ];
 
 export const tiers = [
