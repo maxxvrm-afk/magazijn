@@ -1,4 +1,8 @@
 /* Product card layout fixes */
+.logoWrap img{
+  filter:brightness(0) saturate(100%);
+}
+
 .productCard{
   overflow:hidden;
   min-width:0;
