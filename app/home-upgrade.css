@@ -78,3 +78,13 @@ html,body,main{max-width:100%;overflow-x:hidden}
   .grid4 .productCard:first-child{grid-column:1 / -1}
   .grid4 .productCard:first-child .productArt{min-height:330px}
 }
+
+/* Keep “Meet the first four” balanced on mobile: four equal cards in a 2 × 2 grid. */
+@media(max-width:980px){
+  .homeFeaturedGrid .productCard:first-child{grid-column:auto}
+  .homeFeaturedGrid .productCard:first-child .productArt{aspect-ratio:.82;min-height:0}
+}
+@media(max-width:560px){
+  .homeFeaturedGrid .productCard:first-child{grid-column:auto}
+  .homeFeaturedGrid .productCard:first-child .productArt{min-height:0}
+}
